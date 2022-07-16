@@ -19,6 +19,8 @@ proxies:
   - {name: 🇸🇬 新加坡-arm 2, server: mjj3008.hjdn.tk, port: 443, type: vmess, uuid: 7a97fdab-1cce-49fc-fb59-1410042e745f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mjj3008.hjdn.tk}}, udp: true}
   - {name: 圣荷赛-amd, server: mjj2026.hjdn.tk, port: 443, type: vmess, uuid: c535913b-0ba8-4b44-fc8d-570edac735d1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mjj2026.hjdn.tk, network: ws, ws-opts: {path: /, headers: {Host: mjj2026.hjdn.tk}}, udp: true}
   - {name: 圣荷赛-amd 2, server: mjj2030.hjdn.tk, port: 443, type: vmess, uuid: 86d6c91f-3910-4348-aa78-cc619b160b2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mjj2030.hjdn.tk, network: ws, ws-opts: {path: /, headers: {Host: mjj2030.hjdn.tk}}, udp: true}
+  - {name: 圣荷赛arm, server: mjj3010.hjdn.tk, port: 443, type: vmess, uuid: 61c90b5d-8653-4183-da02-9df3892e7f5b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mjj3010.hjdn.tk, network: ws, ws-opts: {path: /54321, headers: {Host: mjj3010.hjdn.tk}}, udp: true}
+  - {name: 🇺🇸 圣何塞arm, server: mjj3011.hjdn.tk, port: 443, type: vmess, uuid: 06371d67-d976-4c84-ecdf-d7c989e80155, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mjj3011.hjdn.tk, network: ws, ws-opts: {path: /54321, headers: {Host: mjj3011.hjdn.tk}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -39,6 +41,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -58,6 +62,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -78,6 +84,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -110,6 +118,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -134,6 +144,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: 📲 电报信息
     type: select
     proxies:
@@ -153,6 +165,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -173,6 +187,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -202,6 +218,8 @@ proxy-groups:
       - 🇸🇬 新加坡-arm 2
       - 圣荷赛-amd
       - 圣荷赛-amd 2
+      - 圣荷赛arm
+      - 🇺🇸 圣何塞arm
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
